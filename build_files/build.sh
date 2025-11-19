@@ -20,7 +20,7 @@ dnf5 install -y tmux
 # dnf5 -y copr disable ublue-os/staging
 
 #Niri stuff:
-sudo dnf copr enable avengemedia/dms
+sudo dnf copr enable avengemedia/dms -y
 sudo dnf install niri dms -y
 systemctl --user add-wants niri.service dms
 
