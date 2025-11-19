@@ -19,6 +19,12 @@ dnf5 install -y tmux
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
+#Niri stuff:
+sudo dnf copr enable avengemedia/dms
+sudo dnf install niri dms
+systemctl --user add-wants niri.service dms
+
+rpm-ostree install podman-compose fastfetch helix bpytop git-credential-libsecret polkit lxpolkit xdg-user-dirs dbus-tools dbus-daemon gnome-keyring pavucontrol google-noto-emoji-fonts gnome-disk-utility gparted wireplumber pipewire pamixer network-manager-applet NetworkManager-openvpn NetworkManager-openconnect pipewire-alsa wlr-randr wlsunset brightnessctl foot fish fontawesome-fonts-all gnome-themes-extra gnome-icon-theme paper-icon-theme breeze-icon-theme papirus-icon-theme kvantum adw-gtk3-theme ffmpeg gstreamer1-vaapi gstreamer1-plugins-bad-free-extras gstreamer1-plugin-libav -y
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
