@@ -18,7 +18,9 @@ set -ouex pipefail
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
-
+dnf5 copr enable -y ryanabx/cosmic-epoch
+dnf5 -y install @cosmic-desktop @cosmic-desktop-apps
+dnf5 clean all
 #Niri stuff:
 #sudo dnf copr enable avengemedia/dms -y
 #sudo dnf install niri dms -y
