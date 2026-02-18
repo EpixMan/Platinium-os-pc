@@ -13,7 +13,6 @@ sudo rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free
 #sudo dnf install niri dms -y
 rpm-ostree install akmod-nvidia libreoffice podman-compose fastfetch helix git-credential-libsecret polkit xdg-user-dirs dbus-tools dbus-daemon gnome-keyring pavucontrol google-noto-emoji-fonts gnome-disk-utility gparted wireplumber pipewire pamixer network-manager-applet NetworkManager-openvpn NetworkManager-openconnect pipewire-alsa wlr-randr wlsunset brightnessctl foot fish fontawesome-fonts-all gnome-themes-extra gnome-icon-theme paper-icon-theme breeze-icon-theme papirus-icon-theme kvantum adw-gtk3-theme gstreamer1-vaapi gstreamer1-plugins-bad-free-extras gstreamer1-plugin-libav -y
 #todo: install real ffmpeg
-sudo rpm-ostree kargs --append=rd.driver.blacklist=nouveau,nova_core --append=modprobe.blacklist=nouveau,nova_core  # this might not be needed at some point when ostree systems will support the standard way to specify this.
 
 #hyprland stuff
 sudo dnf copr enable solopasha/hyprland -y
