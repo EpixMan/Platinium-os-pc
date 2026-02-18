@@ -14,6 +14,12 @@ sudo rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free
 rpm-ostree install libreoffice podman-compose fastfetch helix git-credential-libsecret polkit xdg-user-dirs dbus-tools dbus-daemon gnome-keyring pavucontrol google-noto-emoji-fonts gnome-disk-utility gparted wireplumber pipewire pamixer network-manager-applet NetworkManager-openvpn NetworkManager-openconnect pipewire-alsa wlr-randr wlsunset brightnessctl foot fish fontawesome-fonts-all gnome-themes-extra gnome-icon-theme paper-icon-theme breeze-icon-theme papirus-icon-theme kvantum adw-gtk3-theme gstreamer1-vaapi gstreamer1-plugins-bad-free-extras gstreamer1-plugin-libav -y
 #todo: install real ffmpeg
 
+#hyprland stuff
+dnf copr enable solopasha/hyprland -y
+dnf install hyprland-plugins hyprsysteminfo hyprpolkitagent hyprlock hypridle hyprpaper hyprshot xdg-desktop-portal-hyprland hyprland -y
+
+dnf copr enable avengemedia/danklinux -y
+dnf install dms -y
 #Removed bpytop
 #systemctl enable --now dsearch
 #systemctl  add-wants niri.service dms
