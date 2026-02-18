@@ -15,11 +15,11 @@ rpm-ostree install libreoffice podman-compose fastfetch helix git-credential-lib
 #todo: install real ffmpeg
 
 #hyprland stuff
-dnf copr enable solopasha/hyprland -y
-dnf install hyprland-plugins hyprsysteminfo hyprpolkitagent hyprlock hypridle hyprpaper hyprshot xdg-desktop-portal-hyprland hyprland -y
+sudo dnf copr enable solopasha/hyprland -y
+sudo dnf install hyprland-plugins hyprsysteminfo hyprpolkitagent hyprlock hypridle hyprpaper hyprshot xdg-desktop-portal-hyprland hyprland -y
 
-dnf copr enable avengemedia/dms -y
-dnf install dms -y
+sudo dnf copr enable avengemedia/dms -y
+sudo dnf install dms -y
 #Removed bpytop
 #systemctl enable --now dsearch
 #systemctl  add-wants niri.service dms
