@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -ouex pipefail
-rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+#rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 #This with sudo appearantly causes "sudo: pam_open_session: Permission denied"
 
 
@@ -19,7 +19,7 @@ rpm-ostree install libreoffice podman-compose fastfetch helix git-credential-lib
 
 #hyprland stuff
 dnf copr enable solopasha/hyprland -y
-dnf install hyprland-plugins hyprsysteminfo hyprpolkitagent hyprlock hypridle hyprpaper hyprshot xdg-desktop-portal-hyprland hyprland -y
+dnf install hyprland-plugins hyprsysteminfo hyprlock hypridle hyprpaper hyprshot xdg-desktop-portal-hyprland hyprland -y
 
 dnf copr enable avengemedia/dms -y
 dnf install dms -y
