@@ -18,7 +18,7 @@ rpm-ostree install libreoffice podman-compose fastfetch helix git-credential-lib
 dnf copr enable solopasha/hyprland -y
 dnf install hyprland-plugins hyprsysteminfo hyprpolkitagent hyprlock hypridle hyprpaper hyprshot xdg-desktop-portal-hyprland hyprland -y
 
-dnf copr enable avengemedia/danklinux -y
+dnf copr enable avengemedia/dms -y
 dnf install dms -y
 #Removed bpytop
 #systemctl enable --now dsearch
