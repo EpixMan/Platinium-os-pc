@@ -20,9 +20,10 @@ rpm-ostree install libreoffice podman-compose fastfetch helix git-credential-lib
 #hyprland stuff
 #dnf copr enable solopasha/hyprland -y
 #dnf install hyprland-plugins hyprlock hypridle hyprpaper hyprshot xdg-desktop-portal-hyprland hyprland -y
+curl -fsSL https://install.determinate.systems/nix | sh -s -- install --no-confirm
 
-dnf copr enable avengemedia/dms -y
-dnf install dms -y
+#dnf copr enable avengemedia/dms -y
+#dnf install dms -y
 #Removed bpytop
 #systemctl enable --now dsearch
 #systemctl  add-wants niri.service dms
